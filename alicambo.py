@@ -26,7 +26,7 @@ for b in range(0,6):
         remove.append(b)
     else:
         print("Incorrect choice.")
-        
+        exit(0)
 
 
 for i in range(len(found)):
