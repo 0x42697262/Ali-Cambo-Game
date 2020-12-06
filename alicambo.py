@@ -37,8 +37,8 @@ for i in range(len(found)):
 for i in range(len(remove)):
     digit += block[remove[i]]
 
-x = set(number) - set(digit)
-x = list(x)
+x = list(set(number) - set(digit))
+
 for i in range(len(x)):
     possible_answers.append(number.count(x[i]))
 
