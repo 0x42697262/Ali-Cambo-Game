@@ -13,14 +13,12 @@ possible_answers = []
 print("Guess a number between 1 - 63")
 
 b = 0
-while b != 5:
+while b != 6:
     table = f"""    {block[b][0]}   {block[b][1]}   {block[b][2]}   {block[b][3]}   {block[b][4]}   {block[b][5]}   {block[b][6]}   {block[b][7]}
     {block[b][8]}   {block[b][9]}   {block[b][10]}   {block[b][11]}   {block[b][12]}   {block[b][13]}   {block[b][14]}   {block[b][15]}
     {block[b][16]}   {block[b][17]}   {block[b][18]}   {block[b][19]}   {block[b][20]}   {block[b][21]}   {block[b][22]}   {block[b][23]}
     {block[b][24]}   {block[b][25]}   {block[b][26]}   {block[b][27]}   {block[b][28]}   {block[b][29]}   {block[b][30]}   {block[b][31]}"""
-    print(f"\n\n{table}\n\nCan your number be found here? Y/n")
-    answer = input(">> ")
-    answer = answer.lower()
+    answer = input(f"\n\n{table}\n\nCan your number be found here? Y/n\n>> ").lower()
     
     if answer == "y":
         found.append(b)
